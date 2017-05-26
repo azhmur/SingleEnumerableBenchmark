@@ -1,3 +1,7 @@
+Testing different implementation for passing single item collection. Test includes both parts - creation and full iteration. It intentionally uses IEnumerable<T> contract. Struct contracts can be faster and have less allocations, but such optimizations will be broken by calling linq methods. 
+
+Conclusion: Yield is good enough as for year 2017.
+
 https://stackoverflow.com/questions/1577822/passing-a-single-item-as-ienumerablet
 
 ``` ini
